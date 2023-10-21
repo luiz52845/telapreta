@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react';
+import { CSSProperties } from 'react';
 
-const buttonContainerStyle = {
+const buttonContainerStyle: CSSProperties = {
   display: 'flex',
   justifyContent: 'center',
   alignItems: 'center',
@@ -59,7 +60,7 @@ export default function Home() {
       {isBlackout ? (
         <div style={buttonContainerStyle}>
           <button style={buttonStyle} onClick={toggleBlackout}>
-            Click AQUI ou presione "ESC" duas vezes para sair.
+            Click AQUI ou presione "ESC" duas vezes" para sair.
           </button>
         </div>
       ) : (
