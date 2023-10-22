@@ -14,6 +14,19 @@ const buttonContainerStyle: CSSProperties = {
   backgroundColor: 'black',
 };
 
+const buttonContainerStyle2: CSSProperties = {
+  display: 'flex',
+  justifyContent: 'center',
+  alignItems: 'center',
+  width: '100%',
+  height: '100vh',
+  position: 'fixed',
+  top: 0,
+  left: 0,
+  zIndex: 9999,
+  backgroundColor: 'white',
+};
+
 const buttonStyle = {
   fontSize: '24px',
   padding: '20px 40px',
@@ -64,9 +77,11 @@ export default function Home() {
           </button>
         </div>
       ) : (
+        <div style={buttonContainerStyle2}>
         <button style={buttonStyle} onClick={toggleBlackout}>
           Ativar Tela Preta
         </button>
+        </div>
       )}
     </div>
   );
